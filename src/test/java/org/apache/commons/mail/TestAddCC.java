@@ -16,11 +16,11 @@ import java.util.Date;
 import junit.framework.TestCase;
 
 public class TestAddCC extends TestCase{
-	EmailMock testEmail;
+	SimpleEmail testEmail;
 	
 	//Setup using EmailMock which extends Simple Email
 	public void setUp() {
-		testEmail = new EmailMock();
+		testEmail = new SimpleEmail();
 	}
 	
     /*

@@ -14,13 +14,14 @@ import javax.mail.internet.InternetAddress;
 import java.util.HashMap;
 import java.util.Date;
 import junit.framework.TestCase;
+import org.apache.commons.mail.SimpleEmail;
 
 public class TestAddBcc extends TestCase{
-	EmailMock testEmail;
+	SimpleEmail testEmail;
 	
 	//Setup using EmailMock which extends Simple Email
 	public void setUp() {
-		testEmail = new EmailMock();
+		testEmail = new SimpleEmail();
 	}
 	
 	/* testAddBcc() passes an array of emails and
