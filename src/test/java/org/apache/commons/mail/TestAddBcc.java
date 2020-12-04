@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Date;
 import junit.framework.TestCase;
 
-public class EmailTest extends TestCase{
+public class TestAddBcc extends TestCase{
 	EmailMock testEmail;
 	
 	//Setup using EmailMock which extends Simple Email
