@@ -7,21 +7,22 @@ pipeline {
         stage("build") {
             
             steps {
-                echo "build stage"
+                sh 'mvn -B -DskipTests clean package'
             }
         }
 
         stage("test") {
 
             steps {
-                echo "test stage"
+                sh 'mvn test'
             }
         }
 
         stage("deliver") {
 
             steps {
-                echo "delivery stage"
+                sh 'echo "nhf___ Delivery Stage"'
+
             }
         }
     }
