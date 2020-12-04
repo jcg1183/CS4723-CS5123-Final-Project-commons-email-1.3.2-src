@@ -21,8 +21,7 @@ pipeline {
         stage("deliver") {
 
             steps {
-                sh 'echo "nhf___ Delivery Stage"'
-
+                echo "nhf___ Delivery Stage"
             }
         }
     }
