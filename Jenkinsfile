@@ -4,24 +4,24 @@ pipeline {
 
     stages {
 
-        stage("Build") {
+        stage('Build Stage') {
             
             steps {
-                echo "build stage"
+                sh 'echo "build stage"'
             }
         }
 
-        stage("Test") {
+        stage('Test Stage') {
 
             steps {
-                echo "test stage"
+                sh 'echo "test stage"'
             }
         }
 
-        stage("Deliver") {
+        stage('Delivery Stage') {
 
             steps {
-                echo "delivery stage"
+                sh 'echo "delivery stage"'
             }
         }
     }
