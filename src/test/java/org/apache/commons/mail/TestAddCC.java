@@ -27,6 +27,8 @@ public class TestAddCC extends TestCase{
 	 * testAddCc() adds a cc email and checks
 	 */
 	public void testAddCc() throws EmailException {
+		System.out.println("Class TestAddCC tests whether the .addCc function works correctly by adding cc emails then accessing them with the object's .get() function.  Student nhf___");
+
 		testEmail.addCc("a@b.com");
 		assertEquals("a@b.com", testEmail.getCcAddresses().get(0).toString());
 	}

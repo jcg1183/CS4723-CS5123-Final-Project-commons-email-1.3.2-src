@@ -28,6 +28,7 @@ public class TestAddBcc extends TestCase{
 	 * checks the first in the list.
 	 */
 	public void testAddBcc() throws EmailException {
+        System.out.println("Class TestAddBcc tests whether the .addBcc function works correctly by adding bcc emails then accessing them with the object's .get() function.  Student nhf___");
 		String[] emails = {"a@b.com", "b@b.com"}; 
 		testEmail.addBcc(emails);
 		assertEquals("a@b.com", testEmail.getBccAddresses().get(0).toString());
